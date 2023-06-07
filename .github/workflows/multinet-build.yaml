@@ -1,0 +1,16 @@
+name: Build on MultiNet Container
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: felsokning/multinet:0.0.1-alpha
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+      - name: .NET Restore
+        run: dotnet restore --verbose
+      - name: .NET Build
+        run: dotnet build --verbose
+      
