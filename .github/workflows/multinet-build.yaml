@@ -13,8 +13,8 @@ jobs:
         run: ls -a
       - name: .NET Restore
         run: dotnet restore --verbosity=normal
-        working-directory: /__w/MultiNet-Example/MultiNet-Example
+        working-directory: MuliNet.Example
       - name: .NET Build
         run: dotnet build --verbosity=normal
-        working-directory: /__w/MultiNet-Example/MultiNet-Example
+        working-directory: MuliNet.Example
       
