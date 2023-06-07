@@ -10,7 +10,7 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v3
       - name: .NET Restore
-        run: dotnet restore --verbose
+        run: dotnet restore --verbosity=normal
       - name: .NET Build
-        run: dotnet build --verbose
+        run: dotnet build --verbosity=normal
       
