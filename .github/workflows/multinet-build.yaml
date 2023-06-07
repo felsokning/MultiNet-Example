@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@v3
+      - name: ls to see magics
+        run: ls -a
       - name: .NET Restore
         run: dotnet restore --verbosity=normal
         working-directory: /__w/MultiNet-Example/MultiNet-Example
