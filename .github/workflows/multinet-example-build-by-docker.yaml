@@ -5,7 +5,7 @@ on: workflow_dispatch
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: felsokning/multinet:5ba85eb2e96185dd94f95e72daa84246b98fe83a
+    container: felsokning/multinet:latest
     steps:
       - name: Check out code
         uses: actions/checkout@v3
